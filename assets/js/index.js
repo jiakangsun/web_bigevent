@@ -65,4 +65,9 @@ const randerAvatar = (user) => {
         const firstName = name[0].toUpperCase()
         $('.text-avatar').html(firstName).show();
     }
+};
+
+// 发布文章 跳转到 文章列表  高亮效果  
+function change() {
+    $('#art_list').addClass('layui-this').next().removeClass('layui-this');
 }
